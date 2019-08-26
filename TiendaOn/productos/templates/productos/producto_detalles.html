@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ object.nombre }}</title>
+</head>
+<body>
+    <p> Producto: {{ object.nombre }}</p>
+    <p> Proveedor: {{ object.proveedor }}</p>
+    <p> Cantidad: {{ object.cantidad }}</p>
+    <p> Descircione: {{ object.descripcion }}</p>
+    <p> Precio: ${{ object.precio }}</p>
+    <p> Costo de Envio: ${{ object.costo_envio }}</p>
+
+    <img src="{{ object.foto.url }}" alt="producto foto">
+</body>
+</html>

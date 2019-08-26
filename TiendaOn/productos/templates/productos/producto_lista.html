@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product List</title>
+</head>
+<body>
+    <h1> {{ object_list|length }} productos en la Tienda</h1>
+    {% for ob in object_list %}
+        <p> Producto: {{ ob.nombre }}</p>
+        <p> Proveedor: {{ ob.proveedor }}</p>
+        <p> Cantidad: {{ ob.cantidad }}</p>
+        <p> Precio: ${{ ob.precio }}</p>
+        <p> Costo de Envio: ${{ ob.costo_envio }}</p>
+        <br>
+        <hr width="100%">
+        <br>
+    {% endfor %}
+</body>
+</html>
